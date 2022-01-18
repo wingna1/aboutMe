@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>About Me</title>
-
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 <style>
     @font-face {
     font-family: 'EliceDigitalBaeum_Bold';
@@ -38,8 +38,11 @@
         font-weight: bold;
     }
     a:hover{
-        color: white;
-        text-decoration: underline;
+        color: #003852;
+        font-weight: bold;
+    }
+    a:active{
+        color: #003852;
         font-weight: bold;
     }
     #header{
@@ -76,9 +79,42 @@
         background-color: none;
     }
     #world{
-        color: black;
+        color: darkred;
         font-weight: bolder;
     }
+    #goliath{
+        color: white;
+        text-align: center;
+        line-height: 50px;
+        -moz-transform: scale(1) rotate(-5deg) translateX(0px) translateY(0px)
+        skewX(1deg) skewY(1deg);
+        -webkit-transform: scale(1) rotate(-5deg) translateX(0px) translateY(0px)
+        skewX(1deg) skewY(1deg);
+        -o-transform: scale(1) rotate(-5deg) translateX(0px) translateY(0px)
+        skewX(1deg) skewY(1deg);
+        -ms-transform: scale(1) rotate(-5deg) translateX(0px) translateY(0px)
+        skewX(1deg) skewY(1deg);
+        transform: scale(1) rotate(-5deg) translateX(0px) translateY(0px) skewX(1deg)
+        skewY(1deg);
+        /*-----------------------*/
+        text-shadow: 1px 1px #003852, 2px 2px #003852, 3px 3px #003852,
+        4px 4px #003852, 5px 5px #003852, 6px 6px #003852, 7px 7px #003852,
+        8px 8px #003852, 9px 9px #003852, 10px 10px #003852, 11px 11px #003852,
+        12px 12px #003852, 13px 13px #003852, 14px 14px #003852, 15px 15px #003852,
+        16px 16px #003852, 17px 17px #003852, 18px 18px #003852, 19px 19px #003852,
+        20px 20px #003852, 21px 21px #003852, 22px 22px #003852, 23px 23px #003852,
+        24px 24px #003852, 25px 25px #003852, 26px 26px 6px #003852;
+    }
+    #david:nth-child(3),
+    #david:nth-child(7) {
+        font-size: 50px;
+    }
+    #david:nth-child(1),
+    #david:nth-child(9),
+    #david:nth-child(5) {
+        font-size: 50px;
+    }
+
 </style>
 </head>
 <body>
@@ -109,7 +145,7 @@
             <span id="back">Back-End 개발자</span>를 목표로 공부하고 있습니다. <br>
             <span id="java">Java</span>를 5개월 공부했고, 
             <span id="py">Python</span>은 아직  초보입니다. <br>
-            꾸준히 열심히 공부하며, 많은 것을 얻어가고 싶습니다. <br>
+            꾸준히 열심히 공부하며 많은 것을 얻어가고 싶습니다. <br>
             잘 부탁드립니다🤗
         </div>
     </div> 
@@ -118,39 +154,40 @@
         <h1>What I like</h1>
         <div>
             <table>
-                    <tr>
-                    <td><img src="./pic/go3.jpg" width="200" height="200"></td>
-                    <td><img src="./pic/knitting1.jpg" width="200" height="200"></td>
-                    <td><img src="./pic/flo2.jpg" width="200" height="200"></td>
-                    </tr>
-                    <tr>
-                    <td>아직 초보지만<br>재미있는<br>골프</td>
-                    <td>멍때리며 마음을<br>정리하는<br>뜨개질</td>
-                    <td>우울할 때<br>기분이 좋아지는<br> 절화</td>
-                    </tr>
+                <tr>
+                <td><img src="./pic/go3.jpg" width="200" height="200"></td>
+                <td><img src="./pic/knitting1.jpg" width="200" height="200"></td>
+                <td><img src="./pic/flo2.jpg" width="200" height="200"></td>
+                </tr>
+                <tr>
+                <td>아직 초보지만<br>재미있는<br>골프</td>
+                <td>멍때리며 마음을<br>정리하는<br>뜨개질</td>
+                <td>우울할 때<br>기분이 좋아지는<br> 절화</td>
+                </tr>
             </table>
             </div>
     </div> 
 
     <div id="goal" align="center">
         <h1>What's my Goal</h1>
-        <div id="explain">
-            <span id="world">세상을 바꾸는</span> 멋진 프로그램을 개발해내고 싶습니다!
+        <div>
+            <h1 id="goliath"><span id="david">꾸준히 공부하고</span><br/>
+                <span id="david">성실히 노력해서</span><br/>
+                <span id="david" style="color: yellow;">세상을 바꾸는</span><br/>
+                <span id="david">멋진 프로그램을</span><br/>
+                <span id="david">개발해내고 싶습니다!</span></h1>
         </div>
-        <!-- <img src="./pic/04.jpg" width="500" height="500"> -->
     </div> 
 
     <div id="contact" align="center">
         <h1>Contact</h1>
         <a href="https://github.com/wingna1">
-            <img src="./pic/git.png" width="50" height="50"></a>
+            <img src="./pic/git.png" width="50" height="50"></a> &emsp;
         <a href="https://www.instagram.com/yessssnz/">
             <img src="./pic/insta.png" width="50" height="50"></a>
     </div>
 </div>
 <div>&emsp;</div>
-
-
 </body>
 
 <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
