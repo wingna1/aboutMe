@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>About Me</title>
+
+<style>
+    @font-face {
+    font-family: 'EliceDigitalBaeum_Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/EliceDigitalBaeum_Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }  
+    @font-face {
+    font-family: 'SBAggroL';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroL.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+    html{
+        background: linear-gradient(to right, #4CA1AF, #C4E0E5); 
+        color:white;
+        font-family: 'SBAggroL';
+    }
+    li{
+        list-style:none;
+        font-size: large;
+        font-weight: lighter;
+        /* display: inline-block; */
+        margin-bottom: 10px;
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+    a{
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    a:hover{
+        color: white;
+        text-decoration: underline;
+        font-weight: bold;
+    }
+    #header{
+        position: fixed;
+        background-color: rgba( 255, 255, 255, 0.4);
+        padding: 7px;
+    }
+    #navLi{
+        margin-right: 10px;
+    }
+    #back{
+        color:black;
+        font-weight: bolder;
+    }
+    #java{
+        color:darkred;
+        font-weight: bolder;
+    }
+    #py{
+        color:MediumBlue;
+        font-weight: bolder;
+    }
+    #explain{
+        font-size: 25px;
+    }
+    td{
+        text-align: center;
+    }
+    #like, #who, #goal, #contact{
+        margin-bottom: 150px;
+    }
+    ::selection{
+        color: #003852;
+        background-color: none;
+    }
+</style>
+</head>
+<body>
+
+<div id="header" align="center">
+    <h1>
+        <img src="./pic/02.png" width="150" height="150">
+        <br>About Me
+    </h1>
+    <div id="mainnav" align="right">
+        <ul id="navLi">
+            <li><a href="#who"> Who am I?</a> </li>
+            <li><a href="#like"> What I like</a> </li>
+            <li><a href="#goal"> What's my Goal</a> </li>
+            <li><a href="#contact" id="contactBtn"> Contact</a> </li>
+        </ul>
+    </div>
+</div>
+
+<div>&emsp;</div>
+<div id="container">
+    <div id="who" align="center" >
+        <h1>Who am I?</h1>
+        <img src="./pic/04.jpg" width="500" height="500">
+        <p></p>
+        <div id="explain">
+            30기 이예솔입니다. <br>
+            <span id="back">Back-End 개발자</span>를 목표로 공부하고 있습니다. <br>
+            <span id="java">Java</span>를 5개월 공부했고, 
+            <span id="py">Python</span>은 아직  초보입니다. <br>
+            꾸준히 열심히 공부하며, 많은 것을 얻어가고 싶습니다. <br>
+            잘 부탁드립니다🤗
+        </div>
+    </div> 
+
+    <div id="like" align="center">
+        <h1>What I like</h1>
+        <div>
+            <table>
+                    <tr>
+                    <td><img src="./pic/go3.jpg" width="200" height="200"></td>
+                    <td><img src="./pic/knitting1.jpg" width="200" height="200"></td>
+                    <td><img src="./pic/flo2.jpg" width="200" height="200"></td>
+                    </tr>
+                    <tr>
+                    <td>아직 초보지만<br>재미있는<br>골프</td>
+                    <td>멍때리며 마음을<br>정리하는<br>뜨개질</td>
+                    <td>우울할 때<br>기분이 좋아지는<br> 절화</td>
+                    </tr>
+            </table>
+            </div>
+    </div> 
+
+    <div id="goal" align="center">
+        <h1>What's my Goal</h1>
+        <div id="explain">
+            세상을 바꾸는 멋진 프로그램을 개발해내고 싶습니다!
+        </div>
+        <!-- <img src="./pic/04.jpg" width="500" height="500"> -->
+    </div> 
+
+    <div id="contact" align="center">
+        <h1>Contact</h1>
+        <a href="https://github.com/wingna1">
+            <img src="./pic/git.png" width="50" height="50"></a>
+        <a href="https://www.instagram.com/yessssnz/">
+            <img src="./pic/insta.png" width="50" height="50"></a>
+    </div>
+</div>
+<div>&emsp;</div>
+
+
+</body>
+
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="cursor.js"></script> 
+<script>
+</script>
+</html>
